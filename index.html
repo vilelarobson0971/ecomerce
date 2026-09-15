@@ -18,30 +18,32 @@
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-500 selection:text-white">
 
   <!-- Faixa de aviso no topo (Azul Royal em degradê para Preto) -->
-  <div class="bg-gradient-to-r from-blue-700 via-blue-900 to-black text-white text-xs font-bold py-2.5 px-4 text-center tracking-wide">
+  <div class="bg-gradient-to-r from-blue-700 via-blue-900 to-black text-white text-[11px] sm:text-xs font-bold py-2 sm:py-2.5 px-3 sm:px-4 text-center tracking-wide">
     🚴‍♂️ Bob Acessórios • Sem carrinho de compras, peça direto no WhatsApp!
   </div>
 
-  <!-- Header / Barra Superior com a Logo -->
+  <!-- Header / Barra Superior Responsiva (Mobile & Desktop) -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-24">
-        <!-- Logo (Aumentada em 50%, sem molduras, bordas ou sombras ao redor) e Título -->
-        <div class="flex items-center gap-4">
+      <div class="flex items-center justify-between py-2.5 sm:py-3 min-h-[72px] sm:min-h-[88px]">
+        <!-- Logo e Título com alinhamento flexível e sem sobreposição -->
+        <div class="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
           <img
             src="imagens/logo.png"
             alt="Bob Acessórios Logo"
-            class="w-18 h-18 sm:w-20 sm:h-20 object-contain"
+            class="w-14 h-14 sm:w-20 sm:h-20 max-w-[56px] sm:max-w-[80px] max-h-[56px] sm:max-h-[80px] object-contain shrink-0"
             onerror="if(this.src.indexOf('bob_logo.jpg') === -1) { this.src='bob_logo.jpg'; } else { this.style.display='none'; document.getElementById('logo-fallback').style.display='flex'; }"
           >
-          <div id="logo-fallback" class="w-18 h-18 text-blue-700 items-center justify-center font-black text-3xl hidden">
+          <div id="logo-fallback" class="w-14 h-14 sm:w-20 sm:h-20 text-blue-700 items-center justify-center font-black text-2xl sm:text-3xl shrink-0 hidden">
             🚴
           </div>
-          <div>
-            <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-display tracking-tight">
+          <div class="min-w-0 flex-1">
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 font-display tracking-tight leading-tight truncate sm:whitespace-normal">
               Bob <span class="text-blue-700">Acessórios</span>
             </h1>
-            <p class="text-xs text-slate-500 font-medium">O melhor para você e sua bike!</p>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-medium truncate sm:whitespace-normal">
+              O melhor para você e sua bike!
+            </p>
           </div>
         </div>
       </div>
@@ -49,23 +51,28 @@
   </header>
 
   <!-- Banner Limpo e Direto (Degradê Azul Royal com Preto suave) -->
-  <section class="py-10 sm:py-12 bg-gradient-to-b from-blue-50/70 via-slate-100/50 to-slate-50 border-b border-slate-200/80">
+  <section class="py-8 sm:py-12 bg-gradient-to-b from-blue-50/70 via-slate-100/50 to-slate-50 border-b border-slate-200/80">
     <div class="max-w-3xl mx-auto px-4 text-center">
-      <p class="text-slate-800 text-base sm:text-lg font-semibold max-w-xl mx-auto leading-relaxed">
+      <p class="text-slate-800 text-sm sm:text-base md:text-lg font-semibold max-w-xl mx-auto leading-relaxed">
         Sem carrinho nem cadastro. Ao clicar em "pedir pelo Whatsapp", a mensagem vai direto pro Bob!
       </p>
+
+      <!-- Frase em Caixa Alta de Atendimento Regional -->
+      <div class="mt-4 inline-block bg-slate-900 text-blue-300 border border-blue-600/40 px-4 py-1.5 rounded-full text-xs sm:text-sm font-black tracking-wider uppercase shadow-xs">
+        ATENDEMOS LONDRINA - CAMBÉ - IBIPORÃ
+      </div>
     </div>
   </section>
 
   <!-- Catálogo de Produtos em Página Única -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <div id="grid-produtos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+    <div id="grid-produtos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
       <!-- Os produtos serão renderizados automaticamente pelo script abaixo -->
     </div>
   </main>
 
   <!-- Rodapé (Azul Royal e Preto) -->
-  <footer class="bg-gradient-to-r from-blue-950 via-slate-950 to-black text-slate-400 py-10 mt-16 border-t border-slate-800 text-center text-xs">
+  <footer class="bg-gradient-to-r from-blue-950 via-slate-950 to-black text-slate-400 py-8 sm:py-10 mt-12 sm:mt-16 border-t border-slate-800 text-center text-xs">
     <div class="max-w-7xl mx-auto px-4 space-y-2">
       <p class="font-bold text-white text-sm">Bob Acessórios • Acessórios para Ciclistas</p>
       <p>© Bob Acessórios. Pedidos sem burocracia direto no WhatsApp.</p>
