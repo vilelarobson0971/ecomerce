@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bob Acessórios | O Melhor para Você e sua Bike</title>
-  <meta name="description" content="Catálogo semanal de acessórios para ciclistas. Peça pelo WhatsApp com a TAG do produto!">
+  <meta name="description" content="Acessórios para ciclistas. Peça direto com o Bob no WhatsApp!">
   <!-- Tailwind CSS CDN para funcionamento 100% autônomo sem Node.js nem build complexo -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,62 +15,44 @@
     h1, h2, h3, .font-display { font-family: 'Outfit', sans-serif; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased selection:bg-amber-400">
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-500 selection:text-white">
 
-  <!-- Faixa de aviso no topo -->
-  <div class="bg-gradient-to-r from-orange-600 via-amber-500 to-emerald-600 text-white text-xs font-bold py-2 px-4 text-center">
-    🚴‍♂️ Bob Acessórios • Catálogo Semanal • Sem carrinho de compras, peça direto no WhatsApp pelo número (43) 99149-2882!
+  <!-- Faixa de aviso no topo (Azul Royal em degradê para Preto) -->
+  <div class="bg-gradient-to-r from-blue-700 via-blue-900 to-black text-white text-xs font-bold py-2.5 px-4 text-center tracking-wide">
+    🚴‍♂️ Bob Acessórios • Sem carrinho de compras, peça direto no WhatsApp!
   </div>
 
   <!-- Header / Barra Superior com a Logo -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-orange-100 shadow-sm">
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <!-- Logo e Título -->
-        <div class="flex items-center gap-3">
-          <!-- Logo: Tenta carregar imagens/logo.png, se falhar tenta bob_logo.jpg, se falhar mostra ícone de bike -->
+      <div class="flex items-center justify-between h-24">
+        <!-- Logo (Aumentada em 50%, sem molduras, bordas ou sombras ao redor) e Título -->
+        <div class="flex items-center gap-4">
           <img
             src="imagens/logo.png"
             alt="Bob Acessórios Logo"
-            class="w-12 h-12 rounded-2xl object-cover ring-2 ring-orange-500 shadow-md"
+            class="w-18 h-18 sm:w-20 sm:h-20 object-contain"
             onerror="if(this.src.indexOf('bob_logo.jpg') === -1) { this.src='bob_logo.jpg'; } else { this.style.display='none'; document.getElementById('logo-fallback').style.display='flex'; }"
           >
-          <div id="logo-fallback" class="w-12 h-12 rounded-2xl bg-orange-500 text-white items-center justify-center font-black text-xl shadow-md hidden">
+          <div id="logo-fallback" class="w-18 h-18 text-blue-700 items-center justify-center font-black text-3xl hidden">
             🚴
           </div>
           <div>
-            <h1 class="text-2xl font-black text-slate-900 font-display">
-              Bob <span class="text-orange-600">Acessórios</span>
+            <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-display tracking-tight">
+              Bob <span class="text-blue-700">Acessórios</span>
             </h1>
             <p class="text-xs text-slate-500 font-medium">O melhor para você e sua bike!</p>
           </div>
         </div>
-
-        <!-- Botão WhatsApp de Contato Geral -->
-        <a
-          href="https://wa.me/5543991492882?text=Ol%C3%A1%20Bob!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20produtos%20do%20cat%C3%A1logo."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-md transition"
-        >
-          <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"/></svg>
-          <span>WhatsApp: (43) 99149-2882</span>
-        </a>
       </div>
     </div>
   </header>
 
-  <!-- Banner Limpo e Direto -->
-  <section class="py-10 sm:py-12 bg-gradient-to-b from-orange-50/80 via-amber-50/40 to-slate-50 border-b border-orange-100">
+  <!-- Banner Limpo e Direto (Degradê Azul Royal com Preto suave) -->
+  <section class="py-10 sm:py-12 bg-gradient-to-b from-blue-50/70 via-slate-100/50 to-slate-50 border-b border-slate-200/80">
     <div class="max-w-3xl mx-auto px-4 text-center">
-      <span class="inline-block bg-orange-100 text-orange-900 text-xs font-extrabold px-3.5 py-1 rounded-full border border-orange-300 mb-3">
-        Catálogo Atualizado Semanalmente
-      </span>
-      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 font-display mb-3">
-        Escolha o acessório e peça com a <span class="text-orange-600">TAG</span> no WhatsApp
-      </h2>
-      <p class="text-slate-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-        Sem carrinho nem cadastro. Cada produto possui sua <strong>TAG única</strong>. Ao clicar em <em>"Pedir pelo WhatsApp"</em>, a mensagem já vai pronta com o nome, TAG e preço direto pro Bob!
+      <p class="text-slate-800 text-base sm:text-lg font-semibold max-w-xl mx-auto leading-relaxed">
+        Sem carrinho nem cadastro. Ao clicar em "pedir pelo Whatsapp", a mensagem vai direto pro Bob!
       </p>
     </div>
   </section>
@@ -82,23 +64,11 @@
     </div>
   </main>
 
-  <!-- Botão Flutuante do WhatsApp -->
-  <a
-    href="https://wa.me/5543991492882?text=Ol%C3%A1%20Bob%20Acess%C3%B3rios!%20Acessei%20o%20cat%C3%A1logo%20e%20gostaria%20de%20fazer%20um%20pedido."
-    target="_blank"
-    rel="noopener noreferrer"
-    class="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-lg shadow-emerald-500/40 hover:scale-105 transition"
-    title="Falar no WhatsApp"
-  >
-    <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"/></svg>
-  </a>
-
-  <!-- Rodapé -->
-  <footer class="bg-slate-900 text-slate-400 py-10 mt-16 border-t border-slate-800 text-center text-xs">
+  <!-- Rodapé (Azul Royal e Preto) -->
+  <footer class="bg-gradient-to-r from-blue-950 via-slate-950 to-black text-slate-400 py-10 mt-16 border-t border-slate-800 text-center text-xs">
     <div class="max-w-7xl mx-auto px-4 space-y-2">
       <p class="font-bold text-white text-sm">Bob Acessórios • Acessórios para Ciclistas</p>
-      <p>WhatsApp oficial: <strong class="text-emerald-400">(43) 99149-2882</strong></p>
-      <p>© Bob Acessórios. Pedidos sem burocracia direto no WhatsApp com a TAG.</p>
+      <p>© Bob Acessórios. Pedidos sem burocracia direto no WhatsApp.</p>
     </div>
   </footer>
 
@@ -109,7 +79,6 @@
   <script>
     const WHATSAPP_NUMERO = "5543991492882";
 
-    // VOCÊ PODE COPIAR E COLAR A LISTA GERADA NO EDITOR & JSON AQUI DENTRO:
     const PRODUTOS = [
       {
         tag: "BOB-01",
@@ -224,14 +193,14 @@
         grid.innerHTML = `
           <div class="col-span-full text-center py-12 bg-white rounded-2xl border border-slate-200 p-6">
             <p class="font-bold text-slate-700">Nenhum acessório cadastrado no momento.</p>
-            <p class="text-xs text-slate-500 mt-1">Volte em breve para conferir as novidades da semana!</p>
+            <p class="text-xs text-slate-500 mt-1">Volte em breve para conferir as novidades!</p>
           </div>
         `;
         return;
       }
 
       grid.innerHTML = PRODUTOS.map(p => `
-        <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+        <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
           <div class="relative aspect-4/3 bg-slate-100 overflow-hidden">
             <img
               src="${p.imagem}"
@@ -240,10 +209,10 @@
               onerror="this.src='https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&auto=format&fit=crop&q=80'"
             >
             <div class="absolute top-3 left-3 flex flex-col gap-1">
-              <span class="bg-slate-900 text-amber-300 text-xs font-black px-2.5 py-1 rounded-lg border border-amber-400/40 shadow-sm font-mono">
+              <span class="bg-slate-950 text-blue-300 text-xs font-black px-2.5 py-1 rounded-lg border border-blue-400/30 shadow-xs font-mono">
                 TAG: ${p.tag}
               </span>
-              ${p.badge ? `<span class="bg-orange-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-xs">${p.badge}</span>` : ''}
+              ${p.badge ? `<span class="bg-blue-700 text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-xs">${p.badge}</span>` : ''}
             </div>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
@@ -263,7 +232,7 @@
                 href="${gerarLinkWhats(p)}"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs py-2.5 px-4 rounded-xl shadow-sm transition"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs py-2.5 px-4 rounded-xl shadow-xs transition"
               >
                 <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"/></svg>
                 <span>Pedir pelo WhatsApp</span>
